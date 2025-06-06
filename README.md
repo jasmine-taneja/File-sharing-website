@@ -44,7 +44,7 @@ A secure, modern file sharing platform built using **Next.js**. Users can upload
 
 ```bash
 # Clone the repository
-git clone 
+git clone https://github.com/aj5101/File-sharing-website
 cd file-sharing-nextjs
 
 # Install dependencies
