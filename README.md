@@ -63,18 +63,13 @@ NEXT_PUBLIC_BASE_URL=http://localhost:3000
 # JWT secret (for NextAuth or custom auth)
 JWT_SECRET=your_jwt_secret
 
-# MongoDB or Firebase setup
+# Firebase setup
 MONGODB_URI=your_mongodb_uri
 
-# File Storage (Local or AWS S3)
+# File Storage )
 STORAGE_TYPE=local # or "s3"
 LOCAL_UPLOAD_PATH=./uploads
 
-# AWS S3 (if using cloud storage)
-AWS_ACCESS_KEY_ID=your_key
-AWS_SECRET_ACCESS_KEY=your_secret
-AWS_BUCKET_NAME=your_bucket
-AWS_REGION=your_region
 
 
 
