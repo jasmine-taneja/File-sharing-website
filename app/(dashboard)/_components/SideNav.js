@@ -7,7 +7,7 @@ function SideNav() {
   const menuList = [
     {
       id: 1,
-      name: 'Upload',
+      name: 'Upload Files',
       icon: Upload,
       path: '/upload'
     },
