@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📁 File Sharing App (Next.js)
 
-## Getting Started
+A secure, modern file sharing platform built using **Next.js**. Users can upload files, generate shareable links, set expiration time or download limits, and securely share files with others. Includes user authentication and supports local or cloud storage.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- ⚡ Built with **Next.js** for blazing-fast performance
+- 🔐 User **authentication** (sign up, log in, log out)
+- 📤 File upload (any format, configurable max size)
+- 🔗 Shareable, unique download links
+- ⏳ Optional **file expiration** (by time or download limit)
+- 🧹 Auto file cleanup after expiry
+- 📦 Local or cloud storage 
+- 📱 Responsive UI for all devices
+- 🧠 Clean and minimal UI/UX with Tailwind CSS
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology      | Purpose                         |
+|----------------|----------------------------------|
+| Next.js         | Frontend + Backend (API Routes) |
+| Tailwind CSS    | Styling                         |
+| MongoDB / Firebase | Database                     |
+| JWT / NextAuth.js | Authentication               |
+| Node.js FS | File storage                |
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Node.js v16+
+- npm or yarn
+- Firebase credentials
+
+---
+
+### 🔧 Installation
 
 ```bash
-npm run dev
+# Clone the repository
+git clone https://github.com/aj5101/File-sharing-website
+cd file-sharing-nextjs
+
+# Install dependencies
+npm install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧪 Environment Setup
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Base
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
-## Learn More
+# JWT secret (for NextAuth or custom auth)
+JWT_SECRET=your_jwt_secret
 
-To learn more about Next.js, take a look at the following resources:
+# Firebase setup
+MONGODB_URI=your_mongodb_uri
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# File Storage )
+STORAGE_TYPE=local # or "s3"
+LOCAL_UPLOAD_PATH=./uploads
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+▶️ Running the App
+npm run dev
+
+
+
+🧪 Testing
+npm run test
+
+
+
+#Deploy to Your Own Server
+npm run build
+npm start
