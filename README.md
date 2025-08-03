@@ -74,7 +74,7 @@ LOCAL_UPLOAD_PATH=./uploads
 
 
 ▶️ Running the App
-npm run dev
+npm run de
 
 
 
