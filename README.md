@@ -1,32 +1,34 @@
 # 📁 File Sharing App (Next.js)
 
-A secure, modern file sharing platform built using **Next.js**. Users can upload files, generate shareable links, set expiration time or download limits, and securely share files with others. Includes user authentication and supports local or cloud storage.
+A modern, secure, and responsive **file sharing platform** built with **Next.js**. Easily upload files, share unique download links, set expiry rules, and manage file access — all wrapped in a sleek UI.
+
+🔗 **Live Website**: [file-sharing-website-six.vercel.app](https://file-sharing-website-six.vercel.app/)
 
 ---
 
 ## ✨ Features
 
-- ⚡ Built with **Next.js** for blazing-fast performance
-- 🔐 User **authentication** (sign up, log in, log out)
-- 📤 File upload (any format, configurable max size)
-- 🔗 Shareable, unique download links
-- ⏳ Optional **file expiration** (by time or download limit)
-- 🧹 Auto file cleanup after expiry
-- 📦 Local or cloud storage 
-- 📱 Responsive UI for all devices
-- 🧠 Clean and minimal UI/UX with Tailwind CSS
+- ⚡ Fast performance with **Next.js**
+- 🔐 User **Authentication** (Register/Login/Logout)
+- 📤 Upload any file type (configurable size limits)
+- 🔗 Generate shareable, unique download links
+- ⏳ Set file expiry (by time or download count)
+- 🧹 Auto-deletion after expiry
+- 📦 Support for **local** or **cloud (S3)** storage
+- 📱 Fully responsive design with **Tailwind CSS**
+- 🧠 Minimal, clean UI & seamless UX
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology      | Purpose                         |
-|----------------|----------------------------------|
-| Next.js         | Frontend + Backend (API Routes) |
-| Tailwind CSS    | Styling                         |
-| MongoDB / Firebase | Database                     |
-| JWT / NextAuth.js | Authentication               |
-| Node.js FS | File storage                |
+| Technology        | Purpose                         |
+|------------------|----------------------------------|
+| **Next.js**       | Frontend + Backend (API Routes) |
+| **Tailwind CSS**  | Styling                         |
+| **MongoDB / Firebase** | Database                   |
+| **NextAuth.js / JWT**  | Authentication             |
+| **Node.js FS / S3**    | File Storage               |
 
 ---
 
@@ -36,7 +38,7 @@ A secure, modern file sharing platform built using **Next.js**. Users can upload
 
 - Node.js v16+
 - npm or yarn
-- Firebase credentials
+- Firebase or MongoDB credentials
 
 ---
 
@@ -44,45 +46,10 @@ A secure, modern file sharing platform built using **Next.js**. Users can upload
 
 ```bash
 # Clone the repository
-git clone https://github.com/aj5101/File-sharing-website
+git clone https://github.com/aj5101/File-sharing-website.git
 cd file-sharing-nextjs
 
 # Install dependencies
 npm install
 # or
 yarn install
-
-```
-
-🧪 Environment Setup
-
-
-# Base
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
-
-# JWT secret (for NextAuth or custom auth)
-JWT_SECRET=your_jwt_secret
-
-# Firebase setup
-MONGODB_URI=your_mongodb_uri
-
-# File Storage )
-STORAGE_TYPE=local # or "s3"
-LOCAL_UPLOAD_PATH=./uploads
-
-
-
-
-▶️ Running the App
-npm run dev
-
-
-
-🧪 Testing
-npm run test
-
-
-
-#Deploy to Your Own Server
-npm run build
-npm start
